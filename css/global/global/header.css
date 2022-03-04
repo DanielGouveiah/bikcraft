@@ -8,10 +8,7 @@
   gap: 20px;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
-  max-width: 1200px;
-  padding: 20px;
-  margin: 0 auto;
+  padding: 20px 0px;
 }
 
 .header-menu {
@@ -22,14 +19,11 @@
   padding: 0px;
 }
 .header-menu a {
-  color: #fff;
-  padding: 16px 0px;
-  font-size: 18px;
+  color: var(--cor-0);
   display: inline-block;
   position: relative;
+  padding: 16px 0px;
   border-radius: 4px;
-  font-family: "Poppins";
-  font-weight: 600;
 }
 
 .header-menu a:after {
@@ -37,7 +31,7 @@
   display: block;
   height: 2px;
   width: 0%;
-  background-color: #fff;
+  background-color: var(--cor-0);
   position: absolute;
   margin-top: 4px;
   transition: 0.3s;
@@ -58,7 +52,7 @@
     gap: 20px;
   }
   .header-menu a:hover {
-    background-color: #1a1a1a;
+    background-color: var(--cor-10);
   }
 }
 
