@@ -7,6 +7,8 @@
 /* Home */
 @import url(global/home/introducao.css);
 @import url(global/home/tecnologia.css);
+@import url(global/home/parceiros.css);
+@import url(global/home/depoimento.css);
 
 /* bicicletas */
 @import url(bicicletas/bicicletas-lista.css);
