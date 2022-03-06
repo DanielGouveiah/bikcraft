@@ -46,6 +46,11 @@
 }
 
 @media (max-width: 800px) {
+  .depoimento-img {
+    max-height: 260px;
+    width: 100%;
+  }
+
   .depoimento {
     grid-template-columns: 1fr;
     overflow: hidden;
@@ -59,5 +64,9 @@
   .depoimento-conteudo p {
     text-align: center;
     padding-bottom: 8px;
+  }
+
+  .depoimento-conteudo p::before {
+    left: -32px;
   }
 }
