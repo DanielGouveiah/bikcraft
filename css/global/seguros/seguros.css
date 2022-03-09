@@ -1,10 +1,10 @@
 .seguros-bg {
   background-color: var(--cor-11);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .seguros {
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: grid;
   gap: 0px 40px;
   grid-template-columns: 1fr 1fr;
@@ -14,7 +14,6 @@
 .seguros h2 {
   grid-column: 1 / -1;
   padding-bottom: 60px;
-  padding-top: 60px;
 }
 
 .seguros-item {
