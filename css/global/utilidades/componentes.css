@@ -5,6 +5,7 @@
   padding: 0px 20px;
 }
 
+/* botao */
 .botao {
   padding: 16px 32px;
   display: inline-block;
@@ -38,6 +39,7 @@
   }
 }
 
+/* link */
 .link {
   display: inline-block;
   color: var(--cor-p1);
@@ -55,4 +57,32 @@
 
 .link:hover {
   color: var(--cor-0);
+}
+
+/* Marcar menu ativo */
+.ativo a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--cor-0);
+  position: absolute;
+  margin-top: 4px;
+}
+
+/* titulo */
+
+.titulo-bg {
+  background-color: var(--cor-11);
+  padding: 60px 0px;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding: 40px 0px;
+  }
+  .titulo p {
+    text-transform: lowercase;
+    font-weight: 400;
+  }
 }
