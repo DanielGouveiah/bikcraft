@@ -18,6 +18,8 @@
 
 /* Seguros */
 @import url(global/seguros/seguros.css);
+@import url(global/seguros/vantagens.css);
+@import url(global/seguros/perguntas.css);
 
 /* Termos */
 @import url(termos/temos.css);
