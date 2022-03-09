@@ -31,6 +31,20 @@
   background: var(--cor-5);
 }
 
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  background: url(../../../img/icones/seta.svg);
+  margin-left: 12px;
+  transition: transform 0.2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
 @media (max-width: 800px) {
   .botao {
     font-size: 1rem;

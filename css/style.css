@@ -14,12 +14,13 @@
 
 /* bicicletas */
 @import url(bicicletas/bicicletas-lista.css);
+@import url(bicicletas/bicicletas.css);
 
 /* Seguros */
 @import url(global/seguros/seguros.css);
 
 /* Termos */
-@import url(global/termos/temos.css);
+@import url(termos/temos.css);
 
 /* Utilitários */
 @import url(global/utilidades/componentes.css);
