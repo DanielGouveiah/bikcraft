@@ -1,0 +1,136 @@
+.bicicleta-bg {
+  padding: 60px 0px;
+}
+
+.bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  justify-content: center;
+}
+
+#bicicleta .titulo > p {
+  text-transform: uppercase;
+}
+
+.bicicleta-img img:first-child {
+  min-width: 100%;
+}
+
+.bicicleta-img img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.bicicleta-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicicleta p,
+.bicicleta-comprar {
+  margin-bottom: 40px;
+}
+
+.bicicleta-comprar {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  justify-items: start;
+  align-items: center;
+  gap: 4px 8px;
+}
+
+.bicicleta-comprar a {
+  grid-row: 1 / 3;
+}
+
+.bicicleta-comprar span {
+  display: flex;
+  padding: 4px 16px;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+  gap: 12px;
+  align-items: center;
+}
+
+.bicicleta h2 {
+  margin-bottom: 32px;
+}
+
+.bicicleta-informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 32px;
+  gap: 20px 40px;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+  margin-bottom: 60px;
+}
+.bicicleta-informacoes img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+.bicicleta-informacoes h3 {
+  margin-bottom: 8px;
+}
+
+.bicicleta-ficha {
+  display: grid;
+  padding: 32px;
+  background: var(--cor-12);
+  border-radius: 4px;
+  gap: 20px;
+}
+
+.bicicleta-ficha li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bicicleta-ficha span {
+  color: var(--cor-6);
+}
+
+@media (max-width: 800px) {
+  .bicicleta {
+    grid-template-columns: 1fr;
+  }
+  .bicicleta-img {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicleta-comprar {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-comprar a {
+    margin-bottom: 8px;
+  }
+
+  .bicicleta-informacoes {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.bicicleta-wrpp {
+  padding: 60px 0px 120px;
+}
+
+.bicicleta-wrpp h2 {
+  padding: 60px 0px 60px;
+}
+
+@media (max-width: 800px) {
+  .bicicleta-wrpp h2 {
+    padding: 0px 0px 40px;
+  }
+  .bicicleta-wrpp ul {
+    flex-wrap: wrap;
+  }
+}
