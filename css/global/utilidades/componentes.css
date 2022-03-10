@@ -2,20 +2,23 @@
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* botao */
 .botao {
-  padding: 16px 32px;
   display: inline-block;
-  background: linear-gradient(#ffc700, #f2a60c);
+  max-width: max-content;
+  padding: 16px 32px;
   border-radius: 4px;
+  border: none;
   box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   color: var(--cor-p6);
+  background: linear-gradient(#ffc700, #f2a60c);
   text-transform: uppercase;
   font: 600 1.125rem/1.35 "Poppins", Sans-serif;
-  max-width: max-content;
 }
 
 .botao:hover {

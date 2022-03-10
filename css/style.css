@@ -28,5 +28,10 @@
 /* Termos */
 @import url(termos/temos.css);
 
+/* Contato */
+@import url(contato/contato.css);
+@import url(contato/lojas.css);
+
 /* Utilitários */
 @import url(global/utilidades/componentes.css);
+@import url(global/utilidades/fomulario.css);
