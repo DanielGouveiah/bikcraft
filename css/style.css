@@ -32,6 +32,9 @@
 @import url(contato/contato.css);
 @import url(contato/lojas.css);
 
+/* Orçamento */
+@import url(orcamento/orcamento.css);
+
 /* Utilitários */
 @import url(global/utilidades/componentes.css);
 @import url(global/utilidades/fomulario.css);

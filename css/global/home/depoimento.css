@@ -44,6 +44,11 @@
 .depoimento-conteudo p::after {
   content: "”";
 }
+@media (min-width: 1200px) {
+  .depoimento-img img {
+    max-height: 520px;
+  }
+}
 
 @media (max-width: 800px) {
   .depoimento-img {
