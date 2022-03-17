@@ -12,7 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="img/icones/favicon.svg" type="img/x-icon" width="32" height="32">
   <title>Seguros | Bikcraft</title>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
+
 
 <body>
   <header class="header-bg">
@@ -23,7 +25,7 @@
       <nav aria-label="primária">
         <ul class="header-menu font-1-m cor-0">
           <li><a href="./bicicletas.html">Bicicletas</a></li>
-          <li class="ativo"><a href="./seguros.html">Seguros</a></li>
+          <li><a href="./seguros.html">Seguros</a></li>
           <li><a href="./contato.html">Contato</a></li>
         </ul>
       </nav>
@@ -38,7 +40,7 @@
       </div>
     </div>
     <div class="seguros container">
-      <div class="seguros-item">
+      <div class="seguros-item fadeInLeft" data-anime="600">
         <h3 class="font-1-xl cor-5">PRATA</h3>
         <span class="font-1-xl cor-0">R$ 199<span class="font-2-s cor-8">mensal</span></span>
         <ul class="font-2-m cor-2">
@@ -47,9 +49,9 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a href="./orcamentos.html" class="botao secundario">Inscreva-se</a>
+        <a href="./orcamento.html?tipo=seguro&seguro=prata" class="botao secundario">Inscreva-se</a>
       </div>
-      <div class="seguros-item">
+      <div class="seguros-item fadeInRight" data-anime="600">
         <h3 class="font-1-xl cor-p1">OURO</h3>
         <span class="font-1-xl cor-0">R$ 299<span class="font-2-s cor-8">mensal</span></span>
         <ul class="font-2-m cor-2">
@@ -60,7 +62,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a href="./orcamentos.html" class="botao">Inscreva-se</a>
+        <a href="./orcamento.html?tipo=seguro&seguro=ouro" class="botao">Inscreva-se</a>
       </div>
     </div>
   </main>
@@ -102,24 +104,28 @@
       <h2 class="font-1-xxl cor-11">nossas vantagens<span class="cor-p1">.</span></h2>
       <dl>
         <div>
-          <dt class="font-2-m cor-11">Qual meio de pagamento vocês aceitam?</dt>
-          <dd class="font-2-s cor-8">Aceitamos cartões de credito com as bandeiras: Visa, MasterCard, ELO e American Express. Pagamentos à vista podem ser feitos através de PIX e Boletos da PagSeguro.</dd>
+          <dt><button class="font-2-m cor-11" aria-controls="pergunta1" aria-expanded="true">Qual meio de pagamento vocês aceitam?</button></dt>
+          <dd class="font-2-s cor-8 ativa" id="pergunta1">Aceitamos cartões de credito com as bandeiras: Visa, MasterCard, ELO e American Express. Pagamentos à vista podem ser feitos através de PIX e Boletos da PagSeguro.</dd>
         </div>
         <div>
-          <dt class="font-2-m cor-11">Como posso ter garantia?</dt>
-          <dd class="font-2-s cor-8">Aceitamos cartões de credito com as bandeiras: Visa, MasterCard, ELO e American Express. Pagamentos à vista podem ser feitos através de PIX e Boletos da PagSeguro.</dd>
+          <dt><button class="font-2-m cor-11" aria-controls="pergunta2" aria-expanded="false">Como posso ter garantia?</button></dt>
+          <dd class="font-2-s cor-8" id="pergunta2">Aceitamos cartões de credito com as bandeiras: Visa, MasterCard, ELO e American Express. Pagamentos à vista podem ser feitos através de PIX e Boletos da PagSeguro.</dd>
         </div>
         <div>
-          <dt class="font-2-m cor-11">Posso parcelar no boleto?</dt>
-          <dd class="font-2-s cor-8">Aceitamos cartões de credito com as bandeiras: Visa, MasterCard, ELO e American Express. Pagamentos à vista podem ser feitos através de PIX e Boletos da PagSeguro.</dd>
+          <dt><button class="font-2-m cor-11" aria-controls="pergunta3" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+          <dd class="font-2-s cor-8" id="pergunta3">Aceitamos cartões de credito com as bandeiras: Visa, MasterCard, ELO e American Express. Pagamentos à vista podem ser feitos através de PIX e Boletos da PagSeguro.</dd>
         </div>
         <div>
-          <dt class="font-2-m cor-11">Vocês possuem loja física?</dt>
-          <dd class="font-2-s cor-8">Aceitamos cartões de credito com as bandeiras: Visa, MasterCard, ELO e American Express. Pagamentos à vista podem ser feitos através de PIX e Boletos da PagSeguro.</dd>
+          <dt><button class="font-2-m cor-11" aria-controls="pergunta4" aria-expanded="false">Vocês possuem loja física?</button></dt>
+          <dd class="font-2-s cor-8" id="pergunta4">Aceitamos cartões de credito com as bandeiras: Visa, MasterCard, ELO e American Express. Pagamentos à vista podem ser feitos através de PIX e Boletos da PagSeguro.</dd>
         </div>
         <div>
-          <dt class="font-2-m cor-11">Quanto tempo dura o seguro?</dt>
-          <dd class="font-2-s cor-8">Aceitamos cartões de credito com as bandeiras: Visa, MasterCard, ELO e American Express. Pagamentos à vista podem ser feitos através de PIX e Boletos da PagSeguro.</dd>
+          <dt><button class="font-2-m cor-11" aria-controls="pergunta5" aria-expanded="false">Quanto tempo dura o seguro?</button></dt>
+          <dd class="font-2-s cor-8" id="pergunta5">Aceitamos cartões de credito com as bandeiras: Visa, MasterCard, ELO e American Express. Pagamentos à vista podem ser feitos através de PIX e Boletos da PagSeguro.</dd>
+        </div>
+        <div>
+          <dt><button class="font-2-m cor-11" aria-controls="pergunta6" aria-expanded="false">Onde posso encontrar meu código de rastreio?</button></dt>
+          <dd class="font-2-s cor-8" id="pergunta6">Aceitamos cartões de credito com as bandeiras: Visa, MasterCard, ELO e American Express. Pagamentos à vista podem ser feitos através de PIX e Boletos da PagSeguro.</dd>
         </div>
       </dl>
     </div>
@@ -157,6 +163,9 @@
       <p class="font-2-m cor-8 footer-copy">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
+
 
 </html>

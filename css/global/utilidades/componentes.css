@@ -77,7 +77,7 @@
 }
 
 /* Marcar menu ativo */
-.ativo a::after {
+a.ativo::after {
   content: "";
   display: block;
   height: 2px;
@@ -88,7 +88,7 @@
 }
 
 @media (max-width: 800px) {
-  .ativo a::after {
+  a.ativo::after {
     display: none;
   }
 }
